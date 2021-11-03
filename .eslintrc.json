@@ -62,18 +62,6 @@
         "args": "none"
       }
     ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "**/*.test.js",
-          "**/*.test.jsx",
-          "**/*.test.ts",
-          "**/*.test.tsx",
-          "src/tests/**/*"
-        ]
-      }
-    ],
     "prettier/prettier": [
       "off",
       {
