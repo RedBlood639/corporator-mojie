@@ -1,20 +1,19 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
 interface ButtonProps {
-  children?: ReactNode
-  [key: string]: unknown
+  children?: ReactNode;
+  [key: string]: unknown;
 }
-
 export interface StyledProps extends ButtonProps {
-  disabled?: boolean
+  disabled?: boolean;
 }
 
-export interface ButtonItemsProps extends StyledProps {
-  loading?: boolean
-  icon?: any
+export interface ButtonItemProps extends StyledProps {
+  loading?: boolean;
+  icon?: any;
 }
 
 export interface ButtonContainerProps extends ButtonProps {
-  bColor?: 'primary' | 'white'
-  bSize?: 'big' | 'small' | 'medium'
+  bColor?: "primary" | "white";
+  bSize?: "big" | "small" | "medium" | "normal";
 }

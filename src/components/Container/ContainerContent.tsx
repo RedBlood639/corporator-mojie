@@ -1,17 +1,21 @@
-import React from 'react'
+import React from "react";
 // Styled component
 
-import styled from 'styled-components'
+import styled from "styled-components";
 
 // type
-type Props = {
-  children: React.ReactNode
+interface Props {
+  children: React.ReactNode;
+}
+
+interface ContainerProps extends Props {
+  mode?: "default" | "normal";
 }
 
 //  ----------------------------
 
-const ContainerContent = styled.div`
-  padding: 0 82px;
+const ContainerContent = styled.div<ContainerProps>`
+  padding: ${(props) => (props.mode == "normal" ? "0 130px;" : "0")};
   margin: 0 auto;
   @media screen and (max-width: 768px) {
     padding: 0 55px;
@@ -22,10 +26,10 @@ const ContainerContent = styled.div`
   @media screen and (max-width: 420px) {
     padding: 0 15px;
   }
-`
+`;
 
-const Container: React.FC<Props> = ({ children }) => {
-  return <ContainerContent>{children}</ContainerContent>
-}
+const Container: React.FC<ContainerProps> = ({ children, mode = "normal" }) => {
+  return <ContainerContent mode={mode}>{children}</ContainerContent>;
+};
 
-export default Container
+export default Container;

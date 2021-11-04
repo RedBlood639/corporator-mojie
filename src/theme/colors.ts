@@ -1,7 +1,7 @@
 const baseColor = {
   white: '#ffffff',
   black: {
-    regular: '#000000',
+    regular: '#090909',
     100: '#140A01',
     200: '#434343',
     300: '#222',
@@ -9,10 +9,10 @@ const baseColor = {
   },
   gray: {
     regular: '#A28888',
-    normal: '#ABB1BB',
+    normal: '#F1F1F1',
     100: '#A3A8AC',
     200: '#868585',
-    300: '#666',
+    300: '#2f3237',
     400: '#f6f6f6',
     500: '#F8F9FA',
   },
@@ -48,14 +48,16 @@ const baseColor = {
     alternate: '#F3F3FF',
   },
   blue: {
-    regular: '#36558F',
+    regular: '#0060ff',
     dark: '#284376',
     light: '#2D9CDB',
     link: '#004FB9',
   },
   orange: {
     regular: '#feba4d',
+    normal:"#ff9c00",
     dark: '#DC6E0A',
+    light:"#feba4d"
   },
   red: {
     regular: '#E31E31',

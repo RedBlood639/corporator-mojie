@@ -25,12 +25,12 @@ export default function Menu() {
     <MenuWrapper>
       <ContainerWrapper>
         <MenuInner>
-          <Row >
-            <Col item = {12}></Col>
-            <Col item = {12}>
-                <MenuContainer data={menuData} />
+          <Row>
+            <Col item={12}></Col>
+            <Col item={12}>
+              <MenuContainer data={menuData} />
             </Col>
-            </Row>
+          </Row>
         </MenuInner>
       </ContainerWrapper>
     </MenuWrapper>

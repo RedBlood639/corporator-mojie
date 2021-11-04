@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import {themeGet} from "@styled-system/theme-get"
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 //  ----------------
 
 export const LinkSectionWrapper = styled.div`

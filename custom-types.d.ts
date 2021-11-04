@@ -2,6 +2,7 @@ declare module '*.png'
 declare module '*.jpg'
 declare module '*.svg'
 declare module '*.gif'
+declare module '*.mp4'
 declare module 'stylis-plugin-rtl' {
   const noTypesYet: any
   export default noTypesYet

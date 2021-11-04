@@ -1,20 +1,29 @@
-import React from 'react'
+import React from "react";
 //  styled component
-import {
-  CopyRightSectionWrapper,
-} from './CopyRightSection.style'
+import { CopyRightSectionWrapper } from "./CopyRightSection.style";
 // Componnent
-import { Row, Col } from 'components/Layout'
+import { Row, Col } from "components/Layout";
+import { WithContainer } from "components/Container";
 //
-import { getThisYear } from 'utils/helper-date'
+import { getThisYear } from "utils/helper-date";
 // Generted Component
 // ----------------------------------------
-export default function CopyRightSection(){
+
+const FooterContent: React.FC = () => {
+  return (
+    <Row alignItems="center" justifyContent="space-between">
+      <Col>
+        @{getThisYear()} Betheme by Muffin group | All Rights Reserved | Powered
+        by Li Haoming
+      </Col>
+    </Row>
+  );
+};
+
+export default function () {
   return (
     <CopyRightSectionWrapper>
-      <Row alignItems="center" justifyContent="space-between">
-        <Col>@{getThisYear()} Betheme by Muffin group | All Rights Reserved | Powered by Li Haoming</Col>
-      </Row>
+      <WithContainer SectionView={FooterContent} cColor="primary.regular" />
     </CopyRightSectionWrapper>
-  )
+  );
 }

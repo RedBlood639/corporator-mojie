@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 // component
-import { ScrollTop } from 'components/Button'
+import { ScrollTop } from "components/Button";
 // layout
-import { Footer,Header } from 'layouts/app-layout/index'
+import { Footer, Header } from "layouts/app-layout/index";
 // styled component
-import { AppLayoutWrapper } from './app-layout.style'
+import { AppLayoutWrapper } from "./app-layout.style";
 
 //  --------------------------------
 
@@ -16,6 +16,6 @@ const Layout: React.FC = ({ children }) => {
       <Footer />
       <ScrollTop />
     </AppLayoutWrapper>
-  )
-}
-export default Layout
+  );
+};
+export default Layout;

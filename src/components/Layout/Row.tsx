@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 //styled system
-import styled from 'styled-components'
+import styled from "styled-components";
 
 // type
-import { LayoutRowProps } from 'types/components/Layout'
+import { LayoutRowProps } from "types/components/Layout";
 
 // -------------------------------------
 
@@ -16,50 +16,50 @@ const RowWrapper = styled.div<LayoutRowProps>`
   flex-direction: ${({ flexDirection }) => flexDirection};
   justify-content: ${({ justifyContent }) => justifyContent};
   align-items: ${({ alignItems }) => alignItems};
-  padding: ${({ padding }) => padding || '0'};
+  padding: ${({ padding }) => padding || "0"};
   width: 100%;
   ${({ flexDirection, gap }) => {
-    if (flexDirection == 'column') {
+    if (flexDirection == "column") {
       return `
         height: 100%;
         & > *:not(:last-child) {
            margin-bottom: ${gap}px;
         }
-      `
+      `;
     }
-    if (flexDirection == 'column-reverse') {
+    if (flexDirection == "column-reverse") {
       return `
         height: 100%;
         & > *:not(:first-child) {
            margin-bottom: ${gap}px;
         }
-      `
+      `;
     }
-    if (flexDirection == 'row') {
+    if (flexDirection == "row") {
       return `
         & > *:not(:last-child) {
            margin-right: ${gap}px;
         }
-      `
+      `;
     }
-    if (flexDirection == 'row-reverse') {
+    if (flexDirection == "row-reverse") {
       return `
         & > *:not(:first-child) {
            margin-right: ${gap}px;
         }
-      `
+      `;
     }
   }}
-`
+`;
 
 const Row: React.FC<LayoutRowProps> = ({
   children,
   padding,
-  flexDirection = 'row',
-  alignItems = 'initial',
-  justifyContent = 'initial',
+  flexDirection = "row",
+  alignItems = "initial",
+  justifyContent = "initial",
   gap = 0,
-  flexWrap = 'nowrap',
+  flexWrap = "nowrap",
 }) => {
   return (
     <RowWrapper
@@ -72,7 +72,7 @@ const Row: React.FC<LayoutRowProps> = ({
     >
       {children}
     </RowWrapper>
-  )
-}
+  );
+};
 
-export default Row
+export default Row;

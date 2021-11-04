@@ -1,14 +1,18 @@
-import React from "react"
-import { Seo } from "components/Seo"
-import metadata from "utils/metadata"
+import type { NextPage } from "next";
+import { Seo } from "components/Seo";
+import metadata from "utils/metadata";
+import Home from "views/Home";
 
-const Home: React.FC = () => {
-  return (   
-    <Seo       
-      title={metadata.home.title}
-      description={metadata.home.description}
-    />
-  )
-}
+const HomePage: NextPage = () => {
+  return (
+    <>
+      <Seo
+        title={metadata.home.title}
+        description={metadata.home.description}
+      />
+      <Home />
+    </>
+  );
+};
 
-export default Home
+export default HomePage;

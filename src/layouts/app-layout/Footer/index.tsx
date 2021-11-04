@@ -1,43 +1,24 @@
-import React, { ComponentType } from 'react'
+import React from "react";
 //  component
-import { Container } from 'components/Container'
+import { WithContainer } from "components/Container";
 //  styled component
-import { FooterWrapper, LinkSection, CopyRightSection } from './index.style'
+import { FooterWrapper } from "./index.style";
 //  views
-import {CopyRightView, LinkSectionView} from "views/Layout/Footer"
-
-//  WithContainer
-interface WithContainerProps {
-  SectionContainer: ComponentType
-  SectionView: ComponentType
-}
-
-const WithContainer = ({
-  SectionContainer,
-  SectionView,
-}: WithContainerProps) => {
-  return (
-    <SectionContainer>
-      <Container>
-        <SectionView />
-      </Container>
-    </SectionContainer>
-  )
-}
-
+import { CopyRightView, LinkSectionView } from "views/Layout/Footer";
 const Footer: React.FC = () => {
   return (
     <FooterWrapper>
       <WithContainer
-        SectionContainer={LinkSection}
         SectionView={LinkSectionView}
+        cColor="primary.regular"
       ></WithContainer>
       <WithContainer
-        SectionContainer={CopyRightSection}
         SectionView={CopyRightView}
+        cColor="primary.regular"
+        mode="default"
       ></WithContainer>
     </FooterWrapper>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
