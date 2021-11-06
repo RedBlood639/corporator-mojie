@@ -64,9 +64,15 @@ const StyledButton = styled.button(
     prop: "size",
     variants: {
       big: { fontSize: 16, px: 36, py: 18 },
-      normal: { borderRadius: 0, height: "42px", width: "150px", fontSize: 12 },
+      normal: {
+        bordeButtonrRadius: 0,
+        height: "42px",
+        width: "150px",
+        fontSize: 12,
+      },
       medium: { height: "42px", fontSize: 16, px: 10, py: 10 },
       small: { height: "38px", fontSize: 16, px: 25, py: 10 },
+      full: { fontSize: 16, px: 36, py: 18, width: "100%" },
     },
   }),
   compose(border, space, layout)
@@ -113,7 +119,7 @@ const Button = React.forwardRef<Ref, ButtonItemProps>(
 );
 
 const ButtonContainer = React.forwardRef<Ref, ButtonContainerProps>(
-  ({ bColor = "primary", bSize = "medium", ...props }, ref) => (
+  ({ bColor = "primary", bSize = "big", ...props }, ref) => (
     <Button ref={ref} variant={bColor} size={bSize} {...props}></Button>
   )
 );

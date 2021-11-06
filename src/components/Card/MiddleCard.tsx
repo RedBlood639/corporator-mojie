@@ -30,23 +30,25 @@ const MiddleCard: React.FC<CardItemProps> = ({
 }) => {
   return (
     <CardWrapper>
-      <Row justifyContent="center" flexDirection="column">
+      <Row justifyContent="center" flexDirection="column" alignItems="center">
         <Col padding="0 0 30px 0">
           <Image src={image} width={width} height={height} />
         </Col>
         <Col padding="0 0 40px 0">
-          <Text fWeight={700} fSize={24} fColor="black.regular">
+          <Text fWeight={700} fSize={24} fColor="black.regular" tAlign="center">
             {title}
           </Text>
         </Col>
         <Col padding="0 0 40px 0">
-          <Text fColor="black.regular">{description}</Text>
+          <Text fColor="black.regular" tAlign="center">
+            {description}
+          </Text>
         </Col>
-        <Col>
+        {/* <Col>
           <Button bColor="orange" bSize="big" icon={<FaRegCommentDots />}>
             READ MORE
           </Button>
-        </Col>
+        </Col> */}
       </Row>
     </CardWrapper>
   );

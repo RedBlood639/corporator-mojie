@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ComponentType, ReactNode } from "react";
 
 interface InputProps {
   children?: ReactNode;
@@ -15,7 +15,10 @@ export interface InputItemProps extends StyledProps {
 }
 
 export interface InputContainerProps extends InputProps {
-  iColor?: "primary" | "white";
+  iColor?: "primary";
   iSize?: "big" | "small" | "medium";
-  iFont?: "bold" | "right" | "medium";
+  iFont?: "bold" |  "medium" | "smbold";
+}
+export interface InputHocProps extends InputContainerProps {
+  Inputicon?: ComponentType;
 }

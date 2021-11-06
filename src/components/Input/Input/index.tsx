@@ -1,6 +1,7 @@
 import React from "react";
 // styled component
 import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 import css from "@styled-system/css";
 import { compose, variant, border, space, layout } from "styled-system";
 
@@ -19,7 +20,6 @@ const StyledInput = styled.input(
     css({
       px: "20px",
       py: "20px",
-      fontSize: "regular",
       fontWeight: "regular",
       width: "100%",
       cursor: props.disabled ? "not-allowed" : "pointer",
@@ -27,7 +27,8 @@ const StyledInput = styled.input(
         "all 0.3s ease, color 300ms ease-in-out, background-color 300ms ease-in-out",
     }),
   {
-    zIndex: 20,
+    zIndex: 15,
+    borderRadius: "10px",
     appearance: "none",
     display: "flex",
     alignItems: "center",
@@ -36,34 +37,26 @@ const StyledInput = styled.input(
     textAlign: "left",
     height: "38px",
     textDecoration: "none",
-    fontFamily: "fonts.roboto",
+    fontFamily: "fonts.lato",
     lineHeight: "10px",
     "&:focus": {
       outline: "none",
+      color: "white",
+      backgroundColor: themeGet("colors.orange.regular"),
     },
   },
   variant({
     variants: {
       primary: {
-        color: "red.regular",
-        bg: "white",
-        border: "none",
-      },
-      red: {
-        color: "gray.300",
-        bg: "white",
-        border: "none",
-        "::placeholder": { color: "red.regular" },
-      },
-      outlinedRed: {
-        color: "black.400",
-        bg: "white",
+        color: "primary.regular",
+        bg: "gray.regular",
         border: "1px solid",
-        borderColor: "red.regular",
-        "::placeholder": { color: "black.400" },
+        borderColor: "gray.normal",
+        "::placeholder": { color: "gray.100" },
       },
     },
   }),
+  // size
   variant({
     prop: "isize",
     variants: {
@@ -77,11 +70,12 @@ const StyledInput = styled.input(
       auto: { height: "100%", px: 16 },
     },
   }),
+  // font
   variant({
     prop: "ifont",
     variants: {
-      medium: { fontSize: 16, fontWeight: 500 },
-      bold: { fontSize: 16, fontWeight: 600 },
+      medium: { fontSize: 15, fontWeight: 900 },
+      bold: { fontSize: 16, fontWeight: 500 },
       smbold: { fontSize: 12, fontWeight: 900 },
     },
   }),

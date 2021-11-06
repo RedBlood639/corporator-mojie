@@ -9,9 +9,9 @@ const Section4: React.FC = () => {
   return (
     <>
       <Section2_1 />
-      <WithContainer SectionView={Section2_2} cColor="primary.regular" />
-      <Section2_3 />
-      <WithContainer SectionView={Section2_4} cColor="primary.regular" />
+      {/* <WithContainer SectionView={Section2_2} cColor="primary.regular" /> */}
+      {/* <Section2_3 /> */}
+      {/* <WithContainer SectionView={Section2_4} cColor="primary.regular" /> */}
     </>
   );
 };

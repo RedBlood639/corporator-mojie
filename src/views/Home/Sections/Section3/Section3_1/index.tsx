@@ -9,15 +9,13 @@ const Secton3_1: React.FC = () => {
     <SectionWrapper>
       <Row flexDirection="column" justifyContent="center" alignItems="center">
         <Col>
-          {" "}
           <Text fWeight={700} fSize={50} fColor="black.regular">
-            Loans, grants and vouchers
+            Company philosophy and vision
           </Text>
         </Col>
         <Col>
           <Text fWeight={400} fColor="black.regular">
-            Feugiat arcu at hendrerit ante molestie condimentum imperdiet nunc
-            eget tellus
+            Authenticity, Social, Dedicated, and Relationship-Oriented
           </Text>
         </Col>
       </Row>

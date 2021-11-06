@@ -13,8 +13,8 @@ const Home: React.FC = () => {
         SectionView={Section2}
         mode="default"
       />
-      <WithContainer cColor="gray.normal" SectionView={Section3} />
-      <WithContainer cColor="white" SectionView={Section4} />
+      {/* <WithContainer cColor="gray.normal" SectionView={Section3} /> */}
+      {/* <WithContainer cColor="white" SectionView={Section4} /> */}
     </>
   );
 };

@@ -13,10 +13,8 @@ import { Col, Row } from "components/Layout";
 export default function Menu() {
   // menu data
   const menuData: Array<MenuItemType> = [
-    { title: "BUY NOW" },
+    { title: "CARRER" },
     { title: "CONTACT" },
-    { title: "FAQ" },
-    { title: "SERVICES" },
     { title: "ABOUT US" },
     { title: "HOME" },
   ];

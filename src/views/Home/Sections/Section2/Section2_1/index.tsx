@@ -19,21 +19,16 @@ const Secton2_1: React.FC = () => {
         </Col>
         <Col item={10}>
           <Row flexDirection="column">
-            <Col>
-              <Text fSize={24} fWeight={700}>
-                Fusce temperum
-              </Text>
-            </Col>
             <Col padding="0 0 50px 0">
               <Text fSize={50} fWeight={700} lHeight={55}>
-                Orci himenaeos praesent amet.
+                Who we are
               </Text>
             </Col>
             <Col padding="0 0 30px 0">
               <Text>
-                Eu platea inceptos integer nulla egestas lorem nisl metus velit
-                himenaeos at sodales varius praesent dictumst molestie aenean
-                pretium eclesium normentium.
+                Mojie incorporates user-generated content into eCommerce to
+                create a groundbreaking interactive experience for buyers and
+                sellers alike.
               </Text>
             </Col>
             <Col>

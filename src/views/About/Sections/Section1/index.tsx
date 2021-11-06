@@ -12,25 +12,24 @@ const Section1: React.FC = () => {
   return (
     <SectionWrapper>
       <Row gap={40} justifyContent="center" alignItems="center">
-        <Col item={11}>
+        <Col item={12}>
           <Col>
             <Text fSize={16} fWeight={700} fColor="orange.light">
               About us
             </Text>
           </Col>
           <Col padding="10px 0 0 0">
-            {" "}
-            <Text fSize={70} fWeight={700} lHeight={75}>
-              Double your income with us
+            <Text fSize={65} fWeight={700} lHeight={70}>
+              Changing The World Through Live Shopping
             </Text>
           </Col>
-          <Col padding="40px 0 0 0">
+          {/* <Col padding="40px 0 0 0">
             {" "}
             <Text>
               Fames tincidunt magna habitant maecenas congue diam nisi ultricies
               nisl aenean tempor facilisis purus.
             </Text>
-          </Col>
+          </Col> */}
         </Col>
         <Col item={12}>
           <Image src={photo1} mode="intrinsic" />

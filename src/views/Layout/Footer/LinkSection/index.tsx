@@ -9,14 +9,22 @@ import {
   LinkSectionWrapper,
 } from "./LinkSection.style";
 
+// import component
 import { useLinkItem } from "components/LinkItem";
+import { Image } from "components/Image";
+// import image
+import photo1 from "assets/images/retina-business4.png";
 // Genterted Component
 const LinkItem = useLinkItem(CategoryItem);
-
+//  - - - - --
 export default function LinkSection() {
   return (
     <LinkSectionWrapper>
       <Row>
+        <Col item={8} padding="40px 0 0 0">
+          <Image src={photo1} mode="intrinsic" width={304.66} height={85.05} />
+        </Col>
+
         <Col item={8} />
         <Col item={4}>
           <Row flexDirection="column">
@@ -24,16 +32,14 @@ export default function LinkSection() {
               <CategoryItemHeader>Useful links</CategoryItemHeader>
             </Col>
             <Col>
-              <LinkItem title="Who we are?" />
-              <LinkItem title="Our team" />
-              <LinkItem title="Career" />
-              <LinkItem title="Business Strategy" />
-              <LinkItem title="Marketing Strategy" />
+              <LinkItem title="Home" />
+              <LinkItem title="About us" />
+              <LinkItem title="Contact Us" />
+              <LinkItem title="Careers" />
             </Col>
           </Row>
         </Col>
-        <Col item={4} />
-        <Col item={8}>
+        {/* <Col item={8}>
           <Row flexDirection="column">
             <Col>
               <CategoryItemHeader>Our address</CategoryItemHeader>
@@ -44,7 +50,7 @@ export default function LinkSection() {
               </Text>
             </Col>
           </Row>
-        </Col>
+        </Col> */}
       </Row>
     </LinkSectionWrapper>
   );

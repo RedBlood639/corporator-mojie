@@ -22,19 +22,17 @@ const Section4_4: React.FC = () => {
                 fWeight={700}
                 tAlign="right"
               >
-                Aliquam erat volutpat
+                Develop your career
               </Text>
             </Col>
             <Col>
               <Text fColor="black.regular" tAlign="right">
-                Phasellus tempor ac, pede. Mauris vitae velit eleifend lectus
-                vulputate a, laoreet condimentumt
+                Work at Mojie. See where you can fit in with your next role.
               </Text>
             </Col>
-            <Col>
-              <br />
+            <Col padding="20px 0 0 0">
               <Button bColor="primary" bSize="big" icon={<IoLogoWindows />}>
-                READ ABOUT US
+                Contact Us
               </Button>
             </Col>
           </Row>

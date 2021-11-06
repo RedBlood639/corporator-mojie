@@ -8,7 +8,7 @@ const baseColor = {
     400: '#020202',
   },
   gray: {
-    regular: '#A28888',
+    regular: '#e8e8e8',
     normal: '#F1F1F1',
     100: '#A3A8AC',
     200: '#868585',

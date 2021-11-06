@@ -15,5 +15,5 @@ export interface ButtonItemProps extends StyledProps {
 
 export interface ButtonContainerProps extends ButtonProps {
   bColor?: "primary" | "white";
-  bSize?: "big" | "small" | "medium" | "normal";
+  bSize?: "big" | "small" | "medium" | "normal"| "fill";
 }

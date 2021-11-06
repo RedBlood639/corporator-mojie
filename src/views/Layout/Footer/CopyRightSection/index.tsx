@@ -20,7 +20,7 @@ const FooterContent: React.FC = () => {
   );
 };
 
-export default function () {
+export default function CopyRightSection() {
   return (
     <CopyRightSectionWrapper>
       <WithContainer SectionView={FooterContent} cColor="primary.regular" />

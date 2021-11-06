@@ -1,6 +1,6 @@
 import React from "react";
 import { SectionWrapper } from "./index.style";
-import { Row } from "components/Layout";
+import { Row, Col } from "components/Layout";
 import { MiddleCard } from "components/Card";
 //  import image
 import photo1 from "assets/images/business4-icon2.png";
@@ -9,21 +9,21 @@ import photo3 from "assets/images/business4-icon3.png";
 
 const data = [
   {
-    title: "Vel rhoncus elemen",
+    title: "Relationship Oriented",
     description:
-      "Volutpat ultricies vehicula id id duis hendrerit at hac egestas semper est primis etiam.",
+      "We are a relationship-oriented company. This means we work hard to earn your business for our goal is to build a long-term relationship.",
     image: photo1,
   },
   {
-    title: "Quisque taciti erat",
+    title: "User-Generated Content ",
     description:
-      "Viverra hac non sociosqu eu aenean et ullamcorper praesent ante mattis bibendum morbi.",
+      "We believe in user-generated content in the formation of the marketplace community in the most authentic sense.",
     image: photo2,
   },
   {
-    title: "Duis ultricies quisque",
+    title: "Social Shopping",
     description:
-      "Elit lacinia et elementum faucibus rhoncus class egestas duis facilisis faucibus ligula.",
+      "We see the lack of a two-way conversation in regular e-commerce shopping so we promote the idea of social shopping to fill that need.",
     image: photo3,
   },
 ];
@@ -31,17 +31,19 @@ const data = [
 const Section3_3: React.FC = () => {
   return (
     <SectionWrapper>
-      <Row justifyContent="center" alignItems="center" gap={30}>
+      <Row justifyContent="center" alignItems="center" gap={20}>
         {data.map((item: any, index: number) => {
           return (
-            <MiddleCard
-              key={`card-item-${index}`}
-              title={item.title}
-              description={item.description}
-              image={item.image}
-              width={60}
-              height={60}
-            />
+            <Col item={8}>
+              <MiddleCard
+                key={`card-item-${index}`}
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                width={60}
+                height={60}
+              />
+            </Col>
           );
         })}
       </Row>

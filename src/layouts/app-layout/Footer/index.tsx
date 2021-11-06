@@ -5,6 +5,8 @@ import { WithContainer } from "components/Container";
 import { FooterWrapper } from "./index.style";
 //  views
 import { CopyRightView, LinkSectionView } from "views/Layout/Footer";
+// import image
+
 const Footer: React.FC = () => {
   return (
     <FooterWrapper>
