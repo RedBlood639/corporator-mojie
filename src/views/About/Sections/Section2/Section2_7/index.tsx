@@ -3,9 +3,9 @@ import { SectionWrapper } from "./index.style";
 import { Row, Col } from "components/Layout";
 import { MiddleCard } from "components/Card";
 //  import image
-import photo1 from "assets/images/business4-icon2.png";
-import photo2 from "assets/images/business4-icon4.png";
-import photo3 from "assets/images/business4-icon3.png";
+import photo1 from "assets/icon/business4-icon2.png";
+import photo2 from "assets/icon/business4-icon4.png";
+import photo3 from "assets/icon/business4-icon2.png";
 
 const data = [
   {

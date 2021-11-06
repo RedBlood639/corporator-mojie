@@ -7,7 +7,7 @@ import { FaQuestion } from "react-icons/fa";
 import { Image } from "components/Image";
 import { SimpleCard } from "components/Card";
 import photo1 from "assets/images/business4-home-pic7.jpg";
-import photo2 from "assets/images/business4-icon5.png";
+import photo2 from "assets/icon/business4-icon5.png";
 const Section4_2: React.FC = () => {
   return (
     <SectionWrapper>

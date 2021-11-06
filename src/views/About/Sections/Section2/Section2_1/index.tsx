@@ -9,7 +9,7 @@ import { SimpleCard } from "components/Card";
 import { Border } from "components/Border";
 //
 import photo1 from "assets/images/business4-wrap-bg3.jpg";
-import photo2 from "assets/images/lamp-icon.jpg";
+import photo2 from "assets/icon/lamp-icon.jpg";
 const Section2_1: React.FC = () => {
   return (
     <SectionWrapper>

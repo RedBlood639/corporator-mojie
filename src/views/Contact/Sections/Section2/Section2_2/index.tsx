@@ -8,8 +8,8 @@ import { Image } from "components/Image";
 import { Text } from "components/Text";
 // import image
 import photo1 from "assets/images/business4-wrap-bg2.jpg";
-import photo2 from "assets/images/business4-icon7.png";
-import photo3 from "assets/images/business4-icon8.png";
+import photo2 from "assets/icon/business4-icon7.png";
+import photo3 from "assets/icon/business4-icon8.png";
 import photo4 from "assets/images/business4-section-bg4.png";
 const Content: React.FC = () => {
   return (

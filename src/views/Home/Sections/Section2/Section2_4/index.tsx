@@ -11,7 +11,7 @@ import { Button } from "components/Button";
 import { FaRegCommentDots } from "react-icons/fa";
 // import image
 import photo1 from "assets/images/business4-home-pic5.jpg";
-import photo2 from "assets/images/business4-icon1.png";
+import photo2 from "assets/icon/business4-icon1.png";
 const Section2_4: React.FC = () => {
   return (
     <StyledWrapper>

@@ -8,7 +8,7 @@ import { FaBriefcase } from "react-icons/fa";
 // import styled component
 import { SectionWrapper } from "./index.stlye";
 // import image
-import photo1 from "assets/images/business4-icon10.png";
+import photo1 from "assets/icon/business4-icon10.png";
 import photo2 from "assets/images/business4-budget-pic2.jpg";
 
 import { Image } from "components/Image";

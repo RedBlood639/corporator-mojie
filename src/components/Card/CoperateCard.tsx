@@ -9,7 +9,7 @@ import { ImUser } from "react-icons/im";
 import { CardItemProps } from "types/components/Card";
 import { Text } from "components/Text";
 //  import image
-import photo from "assets/images/quatation.png";
+import photo from "assets/icon/quatation.png";
 // define the styled component
 const CoperateCardWrapper = styled.div`
   position: relative;
