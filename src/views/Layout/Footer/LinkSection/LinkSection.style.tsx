@@ -22,4 +22,7 @@ export const CategoryItem = styled.div`
     color: ${themeGet("colors.orange.regular")};
     text-decoration: underline;
   }
+  @media screen and (max-width: 530px) {
+    text-align: center;
+  }
 `;

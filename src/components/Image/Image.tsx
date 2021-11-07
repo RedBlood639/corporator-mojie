@@ -5,8 +5,8 @@ import Image from "next/image";
 type ImageComponentProps = {
   src: any;
   alt?: string;
-  width?: number | string;
-  height?: number | string;
+  width?: number;
+  height?: number;
   mode?: "intrinsic" | "fill";
 };
 
@@ -18,7 +18,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
   height,
   mode = "intrinsic",
 }) => {
-  return mode == "fill" ? (
+  return mode === "fill" ? (
     <Image src={src} layout={mode} alt={alt} />
   ) : (
     <Image src={src} alt={alt} width={width} height={height} layout={mode} />

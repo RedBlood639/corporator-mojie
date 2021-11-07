@@ -31,10 +31,17 @@ const data = [
 const Section2_7: React.FC = () => {
   return (
     <SectionWrapper>
-      <Row justifyContent="center" alignItems="center" gap={20}>
+      <Row
+        justifyContent="center"
+        alignItems="flex-start"
+        gap={20}
+        responsive={{
+          768: { flexDirection: "column", justifyContent: "center", gap: 30 },
+        }}
+      >
         {data.map((item: any, index: number) => {
           return (
-            <Col item={8}>
+            <Col item={8} responsive={{ 768: { item: 24 } }}>
               <MiddleCard
                 key={`card-item-${index}`}
                 title={item.title}

@@ -1,14 +1,16 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
 export interface LinkItemWrapperProps extends IconWrapperProps {
-  title?: string
-  href?: string
-  icon?: ReactNode
-  iconSlot?: 'start' | 'end'
-  iconDirection?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
-  iconGaping?: number
-  [key: string]: unknown
+  title?: string;
+  href?: string;
+  icon?: ReactNode;
+  iconSlot?: "start" | "end";
+  iconDirection?: "row" | "column" | "row-reverse" | "column-reverse";
+  alignHorizontal?: "center" | "initial" | "flex-end" | "flex-start";
+  alignVertical?: "center" | "initial" | "flex-end" | "flex-start";
+  iconGaping?: number;
+  [key: string]: unknown;
 }
 export interface IconWrapperProps {
-  iconWidth?: number
+  iconWidth?: number;
 }

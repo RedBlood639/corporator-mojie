@@ -11,7 +11,7 @@ import { AppLayoutWrapper } from "./app-layout.style";
 const Layout: React.FC = ({ children }) => {
   return (
     <AppLayoutWrapper>
-      <Header />
+      {/* <Header /> */}
       {children}
       <Footer />
       <ScrollTop />

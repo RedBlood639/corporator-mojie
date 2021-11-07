@@ -91,11 +91,14 @@ const Content: React.FC = () => {
 const Section2_1: React.FC = () => {
   return (
     <SectionWrapper>
-      <Row alignItems="center">
-        <Col item={12}>
+      <Row
+        alignItems="center"
+        responsive={{ 1024: { flexDirection: "column" } }}
+      >
+        <Col item={12} responsive={{ 1024: { item: 24 } }}>
           <Image src={photo} mode="intrinsic" />
         </Col>
-        <Col item={12}>
+        <Col item={12} responsive={{ 1024: { item: 24 } }}>
           <WithContainer SectionView={Content} />
         </Col>
       </Row>

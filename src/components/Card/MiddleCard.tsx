@@ -7,8 +7,6 @@ import { CardItemProps } from "types/components/Card";
 import { Row, Col } from "components/Layout";
 import { Image } from "components/Image";
 import { Text } from "components/Text";
-import { Button } from "components/Button";
-import { FaRegCommentDots } from "react-icons/fa";
 
 const CardWrapper = styled.div`
   border-radius: 10px;
@@ -35,20 +33,25 @@ const MiddleCard: React.FC<CardItemProps> = ({
           <Image src={image} width={width} height={height} />
         </Col>
         <Col padding="0 0 40px 0">
-          <Text fWeight={700} fSize={24} fColor="black.regular" tAlign="center">
+          <Text
+            fWeight={700}
+            fSize={24}
+            fColor="black.regular"
+            tAlign="center"
+            responsive={{ 1024: { fSize: 22 } }}
+          >
             {title}
           </Text>
         </Col>
         <Col padding="0 0 40px 0">
-          <Text fColor="black.regular" tAlign="center">
+          <Text
+            fColor="black.regular"
+            tAlign="center"
+            responsive={{ 1024: { fSize: 15 } }}
+          >
             {description}
           </Text>
         </Col>
-        {/* <Col>
-          <Button bColor="orange" bSize="big" icon={<FaRegCommentDots />}>
-            READ MORE
-          </Button>
-        </Col> */}
       </Row>
     </CardWrapper>
   );

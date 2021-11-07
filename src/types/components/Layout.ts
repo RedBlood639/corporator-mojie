@@ -1,27 +1,36 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
-// type
-import { InitialProps } from './Common'
+// types
+import { InitialProps } from "./Common";
 
 export interface FlexLayoutProps extends InitialProps {
-  children?: ReactNode
+  children?: ReactNode;
 }
-
-export interface LayourColProps extends FlexLayoutProps {
-  item?: number
+export interface LayoutColProps extends FlexLayoutProps {
+  flex?: string;
+  item?: number;
 }
-
 export interface LayoutRowProps extends FlexLayoutProps {
-  gap?: string | number
-  flexDirection?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
-  flexWrap?: 'nowrap' | 'wrap'
+  display?: "grid" | "flex" | "block";
+  gap?: string | number;
+  flexDirection?: "row" | "column" | "row-reverse" | "column-reverse";
+  flexWrap?: "nowrap" | "wrap";
   justifyContent?:
-    | 'center'
-    | 'flex-start'
-    | 'flex-end'
-    | 'initial'
-    | 'space-around'
-    | 'space-between'
-    | 'stretch'
-  alignItems?: 'center' | 'flex-start' | 'flex-end' | 'initial' | 'stretch'
+    | "center"
+    | "flex-start"
+    | "flex-end"
+    | "initial"
+    | "space-around"
+    | "space-between"
+    | "stretch";
+  alignItems?: "center" | "flex-start" | "flex-end" | "initial" | "stretch";
+  templateCol?: string;
+  templateRow?: string;
+}
+
+export interface ResponsivedLayoutRowProps extends LayoutRowProps {
+  responsive?: { [key: number]: LayoutRowProps };
+}
+export interface ResponsivedLayoutColProps extends LayoutColProps {
+  responsive?: { [key: number]: LayoutColProps };
 }
