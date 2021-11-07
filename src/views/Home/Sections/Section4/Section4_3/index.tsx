@@ -7,7 +7,7 @@ import { Text } from "components/Text";
 import { Button } from "components/Button";
 
 import { IoLogoWindows } from "react-icons/io";
-import photo1 from "assets/images/business4-slider-pic2.jpg";
+import photo1 from "assets/images/business4-slider-pic2.png";
 
 const Section4_4: React.FC = () => {
   return (

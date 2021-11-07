@@ -3,7 +3,7 @@ import React from "react";
 import { MenuContainer } from "components/Menu";
 import { ContainerWrapper } from "components/Container";
 // type
-import { MenuItemType } from "types/components/Menu";
+import { MenuItemProps } from "types/components/Menu";
 // styled components
 import { MenuWrapper, MenuInner } from "./Menu.style";
 import { Col, Row } from "components/Layout";
@@ -12,11 +12,11 @@ import { Col, Row } from "components/Layout";
 
 export default function Menu() {
   // menu data
-  const menuData: Array<MenuItemType> = [
-    { title: "CARRER" },
-    { title: "CONTACT" },
-    { title: "ABOUT US" },
-    { title: "HOME" },
+  const menuData: Array<MenuItemProps> = [
+    { title: "CAREER", href: "/career" },
+    { title: "CONTACT", href: "/contact" },
+    { title: "ABOUT US", href: "/about" },
+    { title: "HOME", href: "/" },
   ];
 
   return (
@@ -24,8 +24,7 @@ export default function Menu() {
       <ContainerWrapper>
         <MenuInner>
           <Row>
-            <Col item={12}></Col>
-            <Col item={12}>
+            <Col item={24}>
               <MenuContainer data={menuData} />
             </Col>
           </Row>

@@ -1,6 +1,6 @@
 import React from "react";
 // type
-import { MenuContainerProps, MenuItemType } from "types/components/Menu";
+import { MenuContainerProps, MenuItemProps } from "types/components/Menu";
 import { MenuItem } from "components/Menu";
 // styled components
 import { MenuContainerWrapper } from "./MenuContainer.style";
@@ -13,10 +13,11 @@ const MenuContainer: React.FC<MenuContainerProps> = ({
 }) => {
   return (
     <MenuContainerWrapper>
-      {data.map((item: MenuItemType, index) => (
+      {data.map((item: MenuItemProps, index) => (
         <MenuItem
           fDirection={fDirection}
           title={item.title}
+          href={item.href}
           key={`menu-item-${index}`}
         />
       ))}

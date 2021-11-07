@@ -9,11 +9,10 @@ export interface StyledProps extends MenuProps {}
 
 export interface MenuItemProps extends StyledProps {
   title?: string;
-}
-export interface MenuItemType {
-  title: string;
+  href?: string;
 }
 
+
 export interface MenuContainerProps extends MenuProps {
-  data?: Array<MenuItemType>;
+  data?: Array<MenuItemProps>;
 }

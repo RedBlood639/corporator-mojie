@@ -46,18 +46,6 @@ export default function LinkSection() {
             </Col>
           </Row>
         </Col>
-        {/* <Col item={8}>
-          <Row flexDirection="column">
-            <Col>
-              <CategoryItemHeader>Our address</CategoryItemHeader>
-            </Col>
-            <Col>
-              <Text fSize={17}>
-                Envato Level 13, 2 Elizabeth, Victoria 3000, Australia
-              </Text>
-            </Col>
-          </Row>
-        </Col> */}
       </Row>
     </LinkSectionWrapper>
   );

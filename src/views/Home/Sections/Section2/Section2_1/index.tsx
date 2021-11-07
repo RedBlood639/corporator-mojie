@@ -8,7 +8,7 @@ import { FaCommentDollar } from "react-icons/fa";
 import { Image } from "components/Image";
 
 // import photo
-import photo1 from "assets/images/business4-home-pic4.jpg";
+import photo1 from "assets/images/business4-home-pic4.png";
 
 const Secton2_1: React.FC = () => {
   return (

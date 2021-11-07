@@ -8,26 +8,13 @@ import { Button } from "components/Button";
 import { Image } from "components/Image";
 import { WithContainer } from "components/Container";
 // import image
-import photo from "assets/images/business4-wrap-bg1.jpg";
+import photo from "assets/images/business4-wrap-bg1.png";
 import { Input } from "components/Input";
 import { TextArea } from "components/TextArea";
 
 const Content: React.FC = () => {
   return (
     <>
-      {/* <Col>
-        <Text fWeight={700} fSize={36} lHeight={42} fColor="black.regular">
-          Write a message.
-        </Text>
-      </Col> 
-      <Col padding="40px 0 40px 0">
-        <Text fColor="black.regular">
-          Tristique proin imperdiet cras duis conubia ullamcorper eget tincidunt
-          sed condimentum dui tellus vivamus hac elit massa blandit dolor
-          pulvinar.
-        </Text>
-      </Col>
-      */}
       <Row flexDirection="column" gap={20}>
         <Col>
           <Row gap={20}>

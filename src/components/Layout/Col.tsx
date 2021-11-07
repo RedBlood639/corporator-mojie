@@ -9,18 +9,23 @@ import { ResponsivedLayoutColProps } from "types/components/Layout";
 const ColWrapper = styled.div<ResponsivedLayoutColProps>`
   flex: ${({ flex }) => flex};
   width: ${({ item }) => getItem(item)};
+  max-width: ${({ mWidth }) => mWidth}px;
+  ${({ padding }) => (padding ? `padding: ${padding}` : "")};
   ${({ responsive }) => responsive && getResponsive(responsive)}
 `;
 
 // func item width
-const getItem = (item) => {
-  if (item <= 0) {
+const getItem = (witem) => {
+  if (witem === -2) {
+    return "0%";
+  }
+  if (witem < 0) {
     return "auto";
   }
-  if (item > 24) {
-    item = 24;
+  if (witem > 24) {
+    witem = 24;
   }
-  return (item / 24) * 100 + "%";
+  return (witem / 24) * 100 + "%";
 };
 // func getter for responsive
 const getResponsive = (responsive) => {
@@ -29,16 +34,19 @@ const getResponsive = (responsive) => {
     (a, b) => parseInt(b) - parseInt(a)
   );
   resData.forEach((itemSize) => {
-    const item = responsive[itemSize];
+    const pointitem = responsive[itemSize];
     resStyle += `@media screen and (max-width:${itemSize}px){
-      ${item.item ? `width: ${getItem(item.item)};` : ""}
-      ${item.flex ? `flex: ${item.flex};` : ""}
+      ${pointitem.item ? `width: ${getItem(pointitem.item)};` : ""}
+      ${pointitem.flex ? `flex: ${pointitem.flex};` : ""}
+      ${pointitem.mWidth ? `max-width: ${pointitem.mWidth}px;` : ""}
+      ${pointitem.padding ? `padding: ${pointitem.padding};` : ""}
+
     }`;
   });
   return resStyle;
 };
 
-const Col = ({ children, item = 0, ...props }: ResponsivedLayoutColProps) => {
+const Col = ({ children, item = -1, ...props }: ResponsivedLayoutColProps) => {
   return (
     <ColWrapper item={item} {...props}>
       {children}

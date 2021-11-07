@@ -6,7 +6,7 @@ import { SectionWrapper } from "./index.style";
 import { Row, Col } from "components/Layout";
 import { Image } from "components/Image";
 //
-import photo1 from "assets/images/business4-budget-pic1.jpg";
+import photo1 from "assets/images/business4-budget-pic1.png";
 import { Text } from "components/Text";
 const Section1: React.FC = () => {
   return (

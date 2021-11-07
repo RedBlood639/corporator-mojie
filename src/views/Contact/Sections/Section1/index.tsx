@@ -8,7 +8,7 @@ import { Image } from "components/Image";
 import { Text } from "components/Text";
 import { WithContainer } from "components/Container";
 //
-import photo1 from "assets/images/business4-contact-pic1.jpg";
+import photo1 from "assets/images/business4-contact-pic1.png";
 import photo2 from "assets/images/business4-section-bg4.png";
 // ------------------------
 
