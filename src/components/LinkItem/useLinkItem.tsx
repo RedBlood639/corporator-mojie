@@ -36,9 +36,11 @@ const useLinkItem = (
       iconWidth,
       alignVertical = "center",
       alignHorizontal = "initial",
+      handleAction,
     }: LinkItemWrapperProps) => {
       const handleOnClick = () => {
         if (href != "") Router.push(href);
+        if (handleAction) handleAction();
       };
 
       return (

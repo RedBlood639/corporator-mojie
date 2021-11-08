@@ -9,7 +9,7 @@ const baseColor = {
   },
   gray: {
     regular: '#e8e8e8',
-    normal: '#F1F1F1',
+    normal: '#FFEBCD',
     100: '#A3A8AC',
     200: '#868585',
     300: '#2f3237',

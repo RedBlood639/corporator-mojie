@@ -7,4 +7,5 @@ export const MenuWrapper = styled.div`
 `;
 export const MenuInner = styled.div`
   margin: 0 20px;
+  padding: 8px 0;
 `;

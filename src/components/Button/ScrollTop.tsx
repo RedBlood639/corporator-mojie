@@ -30,7 +30,7 @@ const ScrollButtonWrapper = styled.div<ScrollButtonProps>`
   cursor: pointer;
   opacity: ${({ showButton }) => (showButton ? 100 : 0)};
   transform: scale(${({ showButton }) => (showButton ? 1 : 0)});
-  transition: all 0.4s ease-in;
+  transition: all 0.4s ease-out;
 `;
 
 // --------------------------------------------------------

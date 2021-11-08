@@ -1,13 +1,18 @@
 import React from "react";
-
+//  import component
+// import styled component
 import { SectionWrapper } from "./index.style";
-//
-import photo from "assets/images/business4-slider-bg.jpg";
-import { Image } from "components/Image";
+
 const Section1: React.FC = () => {
   return (
     <SectionWrapper>
-      <Image src={photo} />
+      <video
+        src={"video.mp4"}
+        autoPlay={true}
+        width="100%"
+        muted={true}
+        loop={true}
+      />
     </SectionWrapper>
   );
 };

@@ -1,13 +1,15 @@
 import React from "react";
 // components
-import { MenuContainer } from "components/Menu";
+import { DesktopMenuContainer } from "components/Menu";
 import { ContainerWrapper } from "components/Container";
 // type
 import { MenuItemProps } from "types/components/Menu";
 // styled components
 import { MenuWrapper, MenuInner } from "./Menu.style";
 import { Col, Row } from "components/Layout";
-
+//  import photo
+import photo from "assets/images/retina-business4.png";
+import { Image } from "components/Image";
 // ------------------------------------------------
 
 export default function Menu() {
@@ -23,9 +25,12 @@ export default function Menu() {
     <MenuWrapper>
       <ContainerWrapper>
         <MenuInner>
-          <Row>
+          <Row justifyContent="center" alignItems="center">
+            <Col>
+              <Image src={photo} width={197} height={55} />
+            </Col>
             <Col item={24}>
-              <MenuContainer data={menuData} />
+              <DesktopMenuContainer data={menuData} />
             </Col>
           </Row>
         </MenuInner>

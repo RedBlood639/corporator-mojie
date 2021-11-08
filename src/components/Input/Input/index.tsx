@@ -24,7 +24,7 @@ const StyledInput = styled.input(
       width: "100%",
       cursor: props.disabled ? "not-allowed" : "pointer",
       transition:
-        "all 0.3s ease, color 300ms ease-in-out, background-color 300ms ease-in-out",
+        "all 0.3s ease, color 300ms ease-out-out, background-color 300ms ease-out-out",
     }),
   {
     zIndex: 15,

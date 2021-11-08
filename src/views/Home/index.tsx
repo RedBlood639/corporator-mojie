@@ -2,7 +2,7 @@ import React from "react";
 
 import { WithContainer } from "components/Container";
 //  views
-import { Section1, Section2, Section3, Section4 } from "views/Home/Sections";
+import { Section1, Section2 } from "views/Home/Sections";
 
 const Home: React.FC = () => {
   return (
@@ -13,8 +13,6 @@ const Home: React.FC = () => {
         SectionView={Section2}
         mode="default"
       />
-      {/* <WithContainer cColor="gray.normal" SectionView={Section3} /> */}
-      {/* <WithContainer cColor="white" SectionView={Section4} /> */}
     </>
   );
 };

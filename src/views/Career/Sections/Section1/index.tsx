@@ -40,8 +40,6 @@ const Section1: React.FC = () => {
               1024: {
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 20,
-                flexDirection: "column",
               },
             }}
           >

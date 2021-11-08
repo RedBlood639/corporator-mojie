@@ -2,10 +2,14 @@ import React from "react";
 // components
 
 import { HeaderWrapper } from "./index.style";
-import { MenuView } from "views/Layout/Header/Menu";
+import { MobileMenu } from "views/Layout/Header/MobileMenu";
 
 const MobileHeader: React.FC = () => {
-  return <HeaderWrapper>{/* <MenuView /> */}</HeaderWrapper>;
+  return (
+    <HeaderWrapper>
+      <MobileMenu />
+    </HeaderWrapper>
+  );
 };
 
 export default MobileHeader;

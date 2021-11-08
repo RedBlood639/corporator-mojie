@@ -1,20 +1,26 @@
 import React from "react";
 // type
 import { MenuContainerProps, MenuItemProps } from "types/components/Menu";
-import { MenuItem } from "components/Menu";
+import { DesktopMenuItem } from "components/Menu";
 // styled components
 import { MenuContainerWrapper } from "./MenuContainer.style";
 
 // --------------------------------------------------------------
 
-const MenuContainer: React.FC<MenuContainerProps> = ({
+interface MenuProps extends MenuContainerProps {
+  onShow?: Function;
+}
+
+const MenuContainer: React.FC<MenuProps> = ({
   data = [],
+  onShow,
   fDirection = "none",
 }) => {
   return (
     <MenuContainerWrapper>
       {data.map((item: MenuItemProps, index) => (
-        <MenuItem
+        <DesktopMenuItem
+          onShow={onShow}
           fDirection={fDirection}
           title={item.title}
           href={item.href}

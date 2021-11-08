@@ -8,4 +8,7 @@ export const SectionWrapper = styled.div`
   background-image: url(${photo.src});
   background-repeat: no-repeat;
   background-position: center bottom;
+  @media screen and (max-width: 425px) {
+    padding: 120px 0;
+  }
 `;

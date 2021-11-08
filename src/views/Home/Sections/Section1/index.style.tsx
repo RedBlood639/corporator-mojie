@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import video from "assets/video/video.mp4";
-import photo from "assets/images/business4-slider-bg.jpg";
+import { themeGet } from "@styled-system/theme-get";
 //
-export const SectionWrapper = styled.div``;
+export const SectionWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  background-color: ${themeGet("colors.primary.regular")};
+  padding-top: 72px;
+`;

@@ -15,9 +15,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
 }) => {
   return (
     <MenuItemWrapper fDirection={fDirection}>
-      <HeaderText fSize={16} fWeight={700}>
-        <LinkItem title={title} href={href} />
-      </HeaderText>
+      <LinkItem title={title} href={href} />
     </MenuItemWrapper>
   );
 };

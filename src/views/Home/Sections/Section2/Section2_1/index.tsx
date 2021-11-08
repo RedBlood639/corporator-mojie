@@ -31,7 +31,7 @@ const Secton2_1: React.FC = () => {
               425: { justifyContent: "center", alignItems: "center" },
             }}
           >
-            <Col padding="0 0 50px 0">
+            <Col padding="0 0 50px 0" responsive={{ 768: { padding: "0" } }}>
               <Text
                 fSize={50}
                 fWeight={700}
@@ -43,7 +43,7 @@ const Secton2_1: React.FC = () => {
                 Who we are
               </Text>
             </Col>
-            <Col padding="0 0 30px 0">
+            <Col padding="0 0 30px 0" responsive={{ 768: { padding: "0" } }}>
               <Text responsive={{ 425: { tAlign: "center", fSize: 15 } }}>
                 Mojie incorporates user-generated content into eCommerce to
                 create a groundbreaking interactive experience for buyers and

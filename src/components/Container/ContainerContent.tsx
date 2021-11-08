@@ -23,7 +23,7 @@ const ContainerContent = styled.div<ContainerProps>`
   @media screen and (max-width: 580px) {
     padding: ${(props) => (props.mode == "normal" ? "0 35px;" : "0")};
   }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 425px) {
     padding: ${(props) => (props.mode == "normal" ? "0 15px;" : "0")};
   }
 `;

@@ -1,6 +1,5 @@
 import React from "react";
 // components
-import { Row } from "components/Layout";
 
 import { HeaderWrapper } from "./index.style";
 import { MenuView } from "views/Layout/Header/Menu";

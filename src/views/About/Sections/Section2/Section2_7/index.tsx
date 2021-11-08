@@ -46,9 +46,12 @@ const Section2_7: React.FC = () => {
       >
         {data.map((item: any, index: number) => {
           return (
-            <Col item={8} responsive={{ 768: { item: -1 } }}>
+            <Col
+              item={8}
+              responsive={{ 768: { item: -1 } }}
+              key={`card-item-${index}`}
+            >
               <MiddleCard
-                key={`card-item-${index}`}
                 title={item.title}
                 description={item.description}
                 image={item.image}

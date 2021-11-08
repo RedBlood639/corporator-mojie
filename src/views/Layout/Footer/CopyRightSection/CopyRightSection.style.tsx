@@ -11,7 +11,7 @@ export const CopyRightSectionWrapper = styled.div`
 `;
 export const StyledLinkItem = styled.div`
   cursor: pointer;
-  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  transition: color 300ms ease-out-out, background-color 300ms ease-out-out;
   :hover {
     color: ${themeGet("colors.white")};
   }

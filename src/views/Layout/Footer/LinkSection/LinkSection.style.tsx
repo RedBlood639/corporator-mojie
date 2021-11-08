@@ -16,7 +16,7 @@ export const CategoryItemHeader = styled.div`
 export const CategoryItem = styled.div`
   cursor: pointer;
   margin-bottom: 5px;
-  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  transition: color 300ms ease-out-out, background-color 300ms ease-out-out;
   color: ${themeGet("colors.white")};
   :hover {
     color: ${themeGet("colors.orange.regular")};
