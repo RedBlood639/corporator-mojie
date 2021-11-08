@@ -10,8 +10,20 @@ export const SectionWrapper = styled.div`
 
 export const Content_Inner = styled.div`
   position: absolute;
-  top: 150px;
+  z-index: 2;
+  top: 250px;
+  @media screen and (max-width: 864px) {
+    top: 150px;
+  }
   @media screen and (max-width: 550px) {
     top: 100px;
   }
+`;
+export const Trans_Inner = styled.div`
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 `;
