@@ -7,3 +7,11 @@ export const SectionWrapper = styled.div`
   background-color: ${themeGet("colors.primary.regular")};
   padding-top: 72px;
 `;
+
+export const Content_Inner = styled.div`
+  position: absolute;
+  top: 150px;
+  @media screen and (max-width: 550px) {
+    top: 100px;
+  }
+`;
