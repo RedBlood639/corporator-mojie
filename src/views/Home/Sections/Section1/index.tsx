@@ -47,7 +47,7 @@ const Section1: React.FC = () => {
                 tAlign="center"
                 responsive={{
                   1024: { fSize: 50, lHeight: 55 },
-                  768: { tAlign: "center", padding: "0 0 30px 0" },
+                  768: { padding: "0 0 30px 0" },
                   448: { fSize: 30, lHeight: 35 },
                   320: { fSize: 25, lHeight: 35 },
                 }}
