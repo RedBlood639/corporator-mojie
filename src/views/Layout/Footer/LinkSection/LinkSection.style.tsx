@@ -4,6 +4,9 @@ import { themeGet } from "@styled-system/theme-get";
 
 export const LinkSectionWrapper = styled.div`
   padding: 70px 0;
+  @media screen and (max-width: 530px) {
+    padding: 30px 0;
+  }
 `;
 export const CategoryItemHeader = styled.div`
   color: ${themeGet("colors.orange.regular")};

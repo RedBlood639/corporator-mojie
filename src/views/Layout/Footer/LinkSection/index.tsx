@@ -26,7 +26,7 @@ export default function LinkSection() {
           530: { flexDirection: "column", alignItems: "center", gap: 30 },
         }}
       >
-        <Col item={8} padding="40px 0 0 0" responsive={{ 530: { item: 12 } }}>
+        <Col item={8} padding="40px 0 0 0" responsive={{ 968: { item: 15 } }}>
           <Image src={photo1} mode="intrinsic" width={304.66} height={85.05} />
         </Col>
 

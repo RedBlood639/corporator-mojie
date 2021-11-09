@@ -29,7 +29,7 @@ const MiddleCard: React.FC<CardItemProps> = ({
   return (
     <CardWrapper>
       <Row justifyContent="center" flexDirection="column" alignItems="center">
-        <Col padding="0 0 30px 0">
+        <Col padding="0 0 30px 0" fColor="blue.regular">
           <Image src={image} width={width} height={height} />
         </Col>
         <Col padding="0 0 40px 0">
