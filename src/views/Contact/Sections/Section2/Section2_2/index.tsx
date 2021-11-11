@@ -24,7 +24,7 @@ const Content: React.FC = () => {
                 lHeight={42}
                 fWeight={700}
               >
-                Envato
+                Mojie
               </Text>
             </Col>
             <Col padding="30px 0 50px 0">
@@ -33,8 +33,10 @@ const Content: React.FC = () => {
                 fSize={24}
                 lHeight={30}
                 fWeight={700}
+                responsive={{ 320: { fSize: 17 } }}
               >
-                Level 13, 2 Elizabeth, Victoria 3000, Australia
+                Unit 1411, 14/Floor, Cosco Tower,183 Queen's Road Central,
+                Sheung Wan, Hong Kong
               </Text>
             </Col>
             <Row flexDirection="column" gap={30}>
@@ -46,22 +48,9 @@ const Content: React.FC = () => {
                     fSize={34}
                     lHeight={40}
                     fColor="black.regular"
+                    responsive={{ 320: { fSize: 27 } }}
                   >
-                    youremail@gmail.com
-                  </Text>
-                </Row>
-              </Col>
-              <Col>
-                <Row>
-                  <Image src={photo2} width={50} height={50} />
-
-                  <Text
-                    fWeight={700}
-                    fSize={34}
-                    lHeight={40}
-                    fColor="black.regular"
-                  >
-                    yourphone
+                    &nbsp;&nbsp;support@mojie.tv
                   </Text>
                 </Row>
               </Col>
@@ -76,14 +65,19 @@ const Content: React.FC = () => {
 const Section2_2: React.FC = () => {
   return (
     <SectionWrapper>
-      <Row alignItems="center">
-        <Col item={12}>
+      <Row
+        alignItems="center"
+        responsive={{
+          1024: { flexDirection: "column-reverse", padding: "30px 0" },
+        }}
+      >
+        <Col item={12} responsive={{ 1024: { item: 24 } }}>
           <WithContainer SectionView={Content} />
           <Image_wrapper>
             <Image src={photo4} mode="intrinsic" />
           </Image_wrapper>
         </Col>
-        <Col item={12}>
+        <Col item={12} responsive={{ 1024: { item: 24, padding: "30px 0" } }}>
           <Image src={photo1} mode="intrinsic" />
         </Col>
       </Row>
